@@ -23,6 +23,10 @@
 		1AC4B56B1C32787400905172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AC4B5691C32787400905172 /* LaunchScreen.storyboard */; };
 		1AC4B5761C32787400905172 /* UnicodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5751C32787400905172 /* UnicodeTests.swift */; };
 		1AC4B5811C32787400905172 /* UnicodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5801C32787400905172 /* UnicodeUITests.swift */; };
+		1AC4B5CD1C32809400905172 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5CC1C32809400905172 /* DataManager.swift */; };
+		1AC4B5CE1C3280AB00905172 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5CC1C32809400905172 /* DataManager.swift */; };
+		1AC4B5D11C32810D00905172 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5CF1C32810D00905172 /* Model.xcdatamodeld */; };
+		1AC4B5D21C32810D00905172 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AC4B5CF1C32810D00905172 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,8 @@
 		1AC4B57C1C32787400905172 /* UnicodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AC4B5801C32787400905172 /* UnicodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeUITests.swift; sourceTree = "<group>"; };
 		1AC4B5821C32787400905172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AC4B5CC1C32809400905172 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Shared/DataManager.swift; sourceTree = "<group>"; };
+		1AC4B5D01C32810D00905172 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		1AC4B4E81C32765600905172 = {
 			isa = PBXGroup;
 			children = (
+				1AC4B5CB1C32807700905172 /* Shared */,
 				1AC4B4F31C32765600905172 /* Dict */,
 				1AC4B50A1C32765600905172 /* DictTests */,
 				1AC4B5151C32765600905172 /* DictUITests */,
@@ -221,6 +228,15 @@
 				1AC4B5821C32787400905172 /* Info.plist */,
 			);
 			path = UnicodeUITests;
+			sourceTree = "<group>";
+		};
+		1AC4B5CB1C32807700905172 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				1AC4B5CC1C32809400905172 /* DataManager.swift */,
+				1AC4B5CF1C32810D00905172 /* Model.xcdatamodeld */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -446,6 +462,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC4B4F91C32765600905172 /* SecondViewController.swift in Sources */,
+				1AC4B5CD1C32809400905172 /* DataManager.swift in Sources */,
+				1AC4B5D11C32810D00905172 /* Model.xcdatamodeld in Sources */,
 				1AC4B4F51C32765600905172 /* AppDelegate.swift in Sources */,
 				1AC4B4F71C32765600905172 /* FirstViewController.swift in Sources */,
 			);
@@ -472,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AC4B5631C32787400905172 /* SecondViewController.swift in Sources */,
+				1AC4B5CE1C3280AB00905172 /* DataManager.swift in Sources */,
+				1AC4B5D21C32810D00905172 /* Model.xcdatamodeld in Sources */,
 				1AC4B55F1C32787400905172 /* AppDelegate.swift in Sources */,
 				1AC4B5611C32787400905172 /* FirstViewController.swift in Sources */,
 			);
@@ -823,6 +843,7 @@
 				1AC4B5851C32787400905172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AC4B5861C32787400905172 /* Build configuration list for PBXNativeTarget "UnicodeTests" */ = {
 			isa = XCConfigurationList;
@@ -831,6 +852,7 @@
 				1AC4B5881C32787400905172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AC4B5891C32787400905172 /* Build configuration list for PBXNativeTarget "UnicodeUITests" */ = {
 			isa = XCConfigurationList;
@@ -839,8 +861,23 @@
 				1AC4B58B1C32787400905172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AC4B5CF1C32810D00905172 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AC4B5D01C32810D00905172 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1AC4B5D01C32810D00905172 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = Shared/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1AC4B4E91C32765600905172 /* Project object */;
 }
